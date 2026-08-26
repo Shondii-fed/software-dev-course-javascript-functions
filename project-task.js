@@ -32,26 +32,26 @@ This activity reinforces:
 // ❌ Original Code (Before Refactoring)
 // ============================================
 
-// Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+// // Script 1 - Greeting multiple users
+// console.log("Welcome, Alice!");
+// console.log("Welcome, Bob!");
+// console.log("Welcome, Charlie!");
 
-// Script 2 - Sum calculation
-let num1 = 5, num2 = 10;
-let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+// // Script 2 - Sum calculation
+// let num1 = 5, num2 = 10;
+// let sum = num1 + num2;
+// console.log("The sum of 5 and 10 is " + sum);
 
-// Script 3 - Product calculation
-let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+// // Script 3 - Product calculation
+// let product = num1 * num2;
+// console.log("The product of 5 and 10 is " + product);
 
-// Script 4 - Print names from a list
-let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-}
+// // Script 4 - Print names from a list
+// let names = ["Alice", "Bob", "Charlie"];
+// console.log("Names in the list:");
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
 
 /*
 ===========================================
@@ -72,3 +72,42 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+// Script 1
+function greet(name) {
+   return console.log(`Welcome, ${name}!`);
+}
+
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+
+// Script 2
+function sum(num1, num2) {
+   return console.log(`The sum of ${num1} and ${num2} is ${num1 + num2}`);
+}
+
+sum(5, 10);
+
+// Script 3
+function productOf(num1, num2) {
+   return console.log(`The product of ${num1} and ${num2} is ${num1 * num2}`);
+}
+
+productOf(5, 10);
+
+// Script 4
+let names = ["Alice", "Bob", "Charlie"];
+
+function listArray(arr) {
+   for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+   }
+}
+
+
+function printArray(arr) {
+   console.log("Names in the list:");
+   listArray(arr);
+}
+
+printArray(names);
