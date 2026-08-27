@@ -104,7 +104,6 @@ function listArray(arr) {
    }
 }
 
-
 function printArray(arr) {
    console.log("Names in the list:");
    listArray(arr);
