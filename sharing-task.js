@@ -37,10 +37,10 @@ reusable functions that solve specific tasks. This activity encourages:
 // 4. Return the result.
 
 function generateBadge(name, role) {
-    return `Name: ${name}, Role: ${role}`
+    return `Name: ${name}, Role: ${role.charAt(0).toUpperCase() + role.slice(1)}`;
 }
 
-console.log(generateBadge("Alice", "Speaker"));
+console.log(generateBadge("Alice", "speaker"));
 
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
