@@ -5,6 +5,7 @@
   "main": "project-task.js",
   "scripts": {
     "start": "node project-task.js",
+    "start": "node sharing-task.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
