@@ -36,8 +36,12 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. Capitalize the role if needed.
 // 4. Return the result.
 
+function capitalizeString(str) {
+    return `${str.charAt(0).toUpperCase() + str.slice(1)}`;
+}
+
 function generateBadge(name, role) {
-    return `Name: ${name}, Role: ${role.charAt(0).toUpperCase() + role.slice(1)}`;
+    return `Name: ${name}, Role: ${capitalizeString(role)}`;
 }
 
 console.log(generateBadge("Alice", "speaker"));
